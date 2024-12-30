@@ -11,6 +11,9 @@ branches.each do |branch|
     puts "ID: #{branch.dereferenced_target.id}}"
 end
 
+project.repository.branch_names
+project.repository.branch_count
+
 # Create a new branch
 
 project.repository.create_branch("new_branch", "source_branch")
